@@ -7,6 +7,11 @@ public class FamilyTour extends BaseTour{
 		this.familyMembersCount = familyMembersCount;
 	}
 	
+	@Override
+	public void transfer() {
+		System.out.println("Transfer by bus");
+	}
+	
 	public void recalculateOverallPrice() {
 		this.price = price*familyMembersCount;
 		System.out.println("Price for " + familyMembersCount + " is " + price);

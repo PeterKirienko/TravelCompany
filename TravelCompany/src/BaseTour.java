@@ -16,20 +16,22 @@ public class BaseTour {
 	public int getPrice() {
 		return price;
 	}
+	
+	public void transfer() {
+		System.out.println("Simple transfer to location");
+	}
 
 	public void setPrice(int price) {
 		this.price = price;
 	}
 	
-
-	
-	public void printTourInfo() {
+			public void printTourInfo() {
 		System.out.println("Tour location: " + location + "\n" +
 				"trips count: " + tripsCount + "\n" +
 				"price: " + price);
 	}
 	
-	public void sellTour(Payble customer) {
+	public void sellTour(Payment customer) {
 		System.out.println("We have sold tour. Now someone will pay to us");
 		customer.pay(price);
 	}

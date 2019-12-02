@@ -1,8 +1,8 @@
 
-public class Adult extends Person implements Payble  {
+public class Adult extends Person implements Payment  {
 
-	public Adult(String name) {
-		super(name);
+	public Adult(String name, int age) {
+		super(name, age);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
-public class Diver extends Person implements Swimmable {
+public class Diver extends Person implements Swimming {
 
-	public Diver(String name) {
-		super(name);
+	public Diver(String name, int age) {
+		super(name, age);
 	}
 
 	@Override
