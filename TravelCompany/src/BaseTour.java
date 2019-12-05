@@ -48,14 +48,4 @@ public class BaseTour {
 			}
 		
 	}
-
-	//public void saleTours();
-	//public void custometSearh();
-	//public void ticketReservation();
-	//public void arrangeSales();
-	
-	//public void price();
-	//public void location();
-	//public void direction();
-	//public void numberOfPeople();
 }

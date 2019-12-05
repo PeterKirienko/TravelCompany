@@ -7,7 +7,6 @@ public class DivingTour extends BaseTour {
 	static final int PRICE_FOR_TWO_TIME_DINNER_TOUR = 450;
 	static final int PRICE_FOR_THREE_TIME_DINNER_TOUR = 550;
 
-	
 	public DivingTour(int availableTrips, String location, int price) {
 		super(availableTrips, location, price);
 		orderOfDiving = generalOrder;
@@ -29,7 +28,7 @@ public class DivingTour extends BaseTour {
 	public void sellTour(Swimming customer) {
 		System.out.println("Client registered");
 	}
-	
+		
 	public void sellTourWithDinners(int dinnersCount) {
 		switch(dinnersCount) {
 		  case 1:
@@ -52,6 +51,8 @@ public class DivingTour extends BaseTour {
 	@Override
 	public void transfer() {
 		System.out.println("Transfer on ship");
+		
+		
 	}
 
 }

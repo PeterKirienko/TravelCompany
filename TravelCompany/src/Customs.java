@@ -1,11 +1,9 @@
-
-class Customs {
-	
+import java.util.PriorityQueue;
+import java.util.*;
+public class Customs {
 	public static class CustomsOffice {
-		
-		public static int leavingPeopleCounter;
-		
-		public static void checkIfPersonCanLeaveCountry(Person person) {
+			public static int leavingPeopleCounter;               	       		
+			public static void checkIfPersonCanLeaveCountry(Person person) {
 			if (person.hasVisa == true) {
 				System.out.println("Go. " + person.name +
 						" is #" + (leavingPeopleCounter+1) +
@@ -14,7 +12,11 @@ class Customs {
 			}
 			else {
 				System.out.println(person.name + " can not go, no visa");
+			
 			}
 		}
+		
+		
 	}
 }
+
