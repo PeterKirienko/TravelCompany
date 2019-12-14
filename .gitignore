@@ -1,4 +1,8 @@
 /bin/
-/.settings/
-.prefs
+*.settings
+*.prefs
+*.class
+.classpath.rej
 .classpath
+.project
+
