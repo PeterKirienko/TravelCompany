@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Scanner;
 
 public class Executer {
 	public static void main(String[] args) {
@@ -15,40 +16,63 @@ public class Executer {
 		trip01.transfer();
 		final int I=2;
 		final int A=3;
+	
+		PossibleTour possibleTour = new PossibleTour("Vova");
+		possibleTour.isTheDateFree();
+	    possibleTour.ñanWePay();
+	    possibleTour.areWeInTime();
+		   
+     	try {
+		possibleTour.travel();
+		} catch (InvalidTourDateException e) {
+		System.out.println(e.getMessage());
+		System.out.println("Check the possibility of a trip! Date free? " + possibleTour.isTheDateFree + "\r\n Got any money? "
+		+ possibleTour.ñanWePay + "\r\n Do you have  any time? " + possibleTour.areWeInTime);
 		
-		FamilyTour trip02 = new FamilyTour(2, 1100);
+		TourSeller seller = new TourSeller();
+	    seller.sellTour();
+		
+		
+	    Catalogue countries = new Catalogue();
+		
+		countries.addItem("Belarus");
+		countries.addItem("Spain");
+		countries.addItem("Belarus");
+		countries.addItem("Germany");
+		countries.printItems();
+		
+		Catalogue catalogue = new Catalogue();	
+		catalogue.addItem("Algeria");
+		catalogue.addItem("Argentina");
+		catalogue.addItem("Armenia");
+		catalogue.addItem("Argentina");
+		catalogue.printItems();
+							
+		TourSchedule tours2 = new TourSchedule();
+		tours2.addTour("Zimbabwe",21,12,2021);
+		tours2.addTour("Algeria",21,12,2023);
+		tours2.addTour("italy",21,12,2010);
+		tours2.addTour("france",44,55,2020);
+		tours2.addTour("Finland",25,12,2019);
+		tours2.printTour();
+		
+		Rating rating = new Rating();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number 1: ");
+        int number1 = in.nextInt();
+        System.out.print("Input a number 2: ");
+        int number2 = in.nextInt();
+        in.close();
+       
+        int result1 = rating.sum(number1, number2);
+        System.out.print("Sum is: " + result1);
+        
+   		FamilyTour trip02 = new FamilyTour(2, 1100);
 		trip02.location = "Tbilisi";
 		trip02.printTourInfo();
 		trip02.recalculateOverallPrice();
 		trip02.transfer();
 		
-		
-		HashSet<String> countrys = new HashSet<String>();
-		countrys.add("Belarus");
-		countrys.add("France");
-		countrys.add("Poland");
-		countrys.add("Armenia");
-		countrys.add("Albania");
-		countrys.add("Brazil");
-		countrys.add("China");
-		countrys.add("Finland");
-		countrys.add("Ireland");
-		countrys.add("Monaco");
-		countrys.add("Spain");
-		countrys.add("Ukraine");
-		countrys.add("Zimbabwe");
-		countrys.add("Turkey");
-
-        boolean isAdded = countrys.add("France");
-        System.out.println(isAdded);       	        
-        System.out.printf("Set contains %d elements \n", countrys.size()); 
-          
-        for(String country : countrys){
-          
-            System.out.println(country);
-        }
-		
-			
 		Adult Max = new Adult("Maxim", 35);
 		Child Daniil = new Child("Daniil", 10, Max);
 		trip02.sellTour(Max);
@@ -69,7 +93,7 @@ public class Executer {
 		trip03.addPersonToGroupTour(Daniil);
 		trip03.addPersonToGroupTour(Vladimir);
 		
-	DivingTour trip05 = new DivingTour(1, "Sochi", 1200);
+	    DivingTour trip05 = new DivingTour(1, "Sochi", 1200);
 		Diver Kostya = new Diver("Kostya", 17);
 		trip05.registerCustomerForTour(Kostya);
 		trip05.printTourInfo();
@@ -79,33 +103,21 @@ public class Executer {
 		trip06.registerCustomerForTour(Nick);
 		trip06.printTourInfo();
 		
-		Map<Integer, String> states = new HashMap<Integer, String>();
-	       states.put(1, "Germany");
-	       states.put(2, "Spain");
-	       states.put(4, "France");
-	       states.put(3, "Italy");
-	       String first = states.get(2);
-	       System.out.println("Next Tour "+first);
 		
-
 		Nick.hasVisa = true;
 		Vladimir.hasVisa = false;
 		Kostya.hasVisa = true;
 		Customs.CustomsOffice.checkIfPersonCanLeaveCountry(Nick);
 		Customs.CustomsOffice.checkIfPersonCanLeaveCountry(Vladimir);
 		Customs.CustomsOffice.checkIfPersonCanLeaveCountry(Kostya);
-		PriorityQueue<Integer> myPriorityQueue = new PriorityQueue<Integer>();
-		myPriorityQueue.add(1);
-	    myPriorityQueue.add(2);
-	    myPriorityQueue.add(3);
+	
 	  
 		trip04.sellTourWithDinners(0);
 		trip04.sellTourWithDinners(2);
 		trip04.sellTourWithDinners(55);
 		
 		       		
-		System.out.println("The number in the queue");
-        myPriorityQueue.remove(2);
-        System.out.println("After removing:");
+		
         }
-			}
+}
+}
