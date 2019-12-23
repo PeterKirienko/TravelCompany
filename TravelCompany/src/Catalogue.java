@@ -22,10 +22,5 @@ public class Catalogue {
 	    	System.out.println(counter + ") " + item);
 	    	counter++;
 	    }
-	    	    	    }
-	}
-	
-
-
-
-
+    }
+}

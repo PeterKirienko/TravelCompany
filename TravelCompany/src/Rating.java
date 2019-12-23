@@ -1,4 +1,3 @@
-
 public class Rating {
 
 	public int sum(int x, int y){
@@ -16,4 +15,3 @@ public class Rating {
         return x + y + z;
     }
 }
-
