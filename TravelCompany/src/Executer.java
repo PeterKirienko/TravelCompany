@@ -1,11 +1,13 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.PriorityQueue;
 import java.util.Scanner;
+import tour.*;
+import person.*;
 
 public class Executer {
 	public static void main(String[] args) {
+		TourSeller test = new TourSeller();
+		test.sellTour();
+		
+		
 		BaseTour trip01 = new BaseTour(10, "Kiev", 220);
 		trip01.setPrice(240);
 		trip01.printTourInfo();
@@ -19,7 +21,9 @@ public class Executer {
 	
 		PossibleTour possibleTour = new PossibleTour("Vova");
 		possibleTour.isTheDateFree();
-	    possibleTour.ñanWePay();
+
+	    possibleTour.wePay();
+
 	    possibleTour.areWeInTime();
 		   
      	try {
@@ -27,7 +31,8 @@ public class Executer {
 		} catch (InvalidTourDateException e) {
 		System.out.println(e.getMessage());
 		System.out.println("Check the possibility of a trip! Date free? " + possibleTour.isTheDateFree + "\r\n Got any money? "
-		+ possibleTour.ñanWePay + "\r\n Do you have  any time? " + possibleTour.areWeInTime);
+
+		+ possibleTour.wePay + "\r\n Do you have  any time? " + possibleTour.areWeInTime);
 		
 		TourSeller seller = new TourSeller();
 	    seller.sellTour();
@@ -57,17 +62,17 @@ public class Executer {
 		tours2.printTour();
 		
 		Rating rating = new Rating();
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input a number 1: ");
-        int number1 = in.nextInt();
-        System.out.print("Input a number 2: ");
-        int number2 = in.nextInt();
-        in.close();
-       
-        int result1 = rating.sum(number1, number2);
-        System.out.print("Sum is: " + result1);
-        
-   		FamilyTour trip02 = new FamilyTour(2, 1100);
+    Scanner in = new Scanner(System.in);
+    System.out.print("Input a number 1: ");
+    int number1 = in.nextInt();
+    System.out.print("Input a number 2: ");
+    int number2 = in.nextInt();
+    in.close();
+
+    int result1 = rating.sum(number1, number2);
+    System.out.print("Sum is: " + result1);
+
+    FamilyTour trip02 = new FamilyTour(2, 1100);
 		trip02.location = "Tbilisi";
 		trip02.printTourInfo();
 		trip02.recalculateOverallPrice();
@@ -93,7 +98,7 @@ public class Executer {
 		trip03.addPersonToGroupTour(Daniil);
 		trip03.addPersonToGroupTour(Vladimir);
 		
-	    DivingTour trip05 = new DivingTour(1, "Sochi", 1200);
+	  DivingTour trip05 = new DivingTour(1, "Sochi", 1200);
 		Diver Kostya = new Diver("Kostya", 17);
 		trip05.registerCustomerForTour(Kostya);
 		trip05.printTourInfo();
@@ -102,8 +107,7 @@ public class Executer {
 		Diver Nick = new Diver("Nick", 25);
 		trip06.registerCustomerForTour(Nick);
 		trip06.printTourInfo();
-		
-		
+				
 		Nick.hasVisa = true;
 		Vladimir.hasVisa = false;
 		Kostya.hasVisa = true;
@@ -114,10 +118,7 @@ public class Executer {
 	  
 		trip04.sellTourWithDinners(0);
 		trip04.sellTourWithDinners(2);
-		trip04.sellTourWithDinners(55);
-		
-		       		
-		
-        }
-}
+		trip04.sellTourWithDinners(55); 
+    }
+  }
 }

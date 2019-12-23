@@ -27,7 +27,5 @@ public class TourSchedule {
 		} finally {
 		      System.out.println("Thanks for using Coral Travel!");
 	    }
-		
+	  }
 	}
-	
- }
