@@ -22,7 +22,7 @@ public class Executer {
 		PossibleTour possibleTour = new PossibleTour("Vova");
 		possibleTour.isTheDateFree();
 
-	    possibleTour.wePay();
+	    possibleTour.ñanWePay();
 
 	    possibleTour.areWeInTime();
 		   
@@ -32,7 +32,7 @@ public class Executer {
 		System.out.println(e.getMessage());
 		System.out.println("Check the possibility of a trip! Date free? " + possibleTour.isTheDateFree + "\r\n Got any money? "
 
-		+ possibleTour.wePay + "\r\n Do you have  any time? " + possibleTour.areWeInTime);
+		+ possibleTour.ñanWePay + "\r\n Do you have  any time? " + possibleTour.areWeInTime);
 		
 		TourSeller seller = new TourSeller();
 	    seller.sellTour();
