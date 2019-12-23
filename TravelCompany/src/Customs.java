@@ -1,5 +1,5 @@
-import java.util.PriorityQueue;
-import java.util.*;
+import person.*;
+
 public class Customs {
 	public static class CustomsOffice {
 			public static int leavingPeopleCounter;               	       		
@@ -12,11 +12,11 @@ public class Customs {
 			}
 			else {
 				System.out.println(person.name + " can not go, no visa");
-			
-			}
-		}
-		
-		
+			}				
+}
 	}
 }
+		
+
+
 
