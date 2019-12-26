@@ -1,0 +1,46 @@
+<classes>
+<basetour>
+	<title>divingtour<title>
+	<title>familytour<title>
+	<title>luxurytour<title>
+	<title>possibletour<title>
+</basetour>
+	<customers>
+		<title>adult</title>
+		<title>boy</title>
+		<title>child</title>
+		<title>customer</title>
+		<title>girl</title>
+		<title>person</title>
+	</customers>
+<interfaces>
+		<title>swimming</title>
+		<title>pay</title>
+		<title>seller</title>
+		<title>trip<title>
+		<title>trip<title>
+		<title>flight<title>
+		<title>sale<title>
+</interfaces>
+<city>
+
+		<title>Kiev</title>
+		<title>Minsk</title>
+		<title>Moscow<title>
+		<title>Paris<title>
+		<title>Berlin<title>
+		<title>Madrid<title>
+</city>
+<country>
+
+		<title>Belarus</title>
+		<title>Spain</title>
+		<title>Germany<title>
+		<title>Algeria<title>
+		<title>Argentina<title>
+		<title>Armenia<title>
+		<title>Armenia<title>
+		<title>Italy<title>
+		<title>France<title>
+</country>
+</classes>
