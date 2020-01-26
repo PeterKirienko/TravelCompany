@@ -17,9 +17,9 @@ public class App {
 	        Reader reader = null;
 	        try {
 	            reader = Resources
-	                    .getResourceAsReader("mybatis.config.xml"); //Читаем файл с настройками подключения и настройками MyBatis
+	                    .getResourceAsReader("mybatis.config.xml");
 	            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-	            citiesMapper = sqlSessionFactory.openSession().getMapper(CitiesMapper.class); //Создаем маппер, из которого и будем вызывать методы getSubscriberById и getSubscribers
+	            citiesMapper = sqlSessionFactory.openSession().getMapper(CitiesMapper.class);
 	            Cities city = citiesMapper.getCityById(1);
 	            System.out.println(city.getName());
 
@@ -28,7 +28,6 @@ public class App {
 				{
 					System.out.println(c.getCities_id() + " " + c.getName());
 				}
-				//citiesMapper.AddCity(2,"Brest", "");
 	        }
 			catch (IOException e) {
 				e.printStackTrace();

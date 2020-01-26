@@ -7,10 +7,5 @@
     <select id="getCitiesByCountryId" parameterType="java.lang.Integer" resultType="city">
         select * from  cities where countries_idcountries = #{Countryid} 
     </select>
-        
-    <insert id="AddCity">
-        insert into cities (Name, countries_idcountries, Description)
-        values (#{Name}, #{CountryId}, #{Description})
-    </insert>
     
-    </mapper>
+</mapper>
