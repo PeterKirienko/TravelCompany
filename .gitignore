@@ -1,8 +1,10 @@
 /bin/
+/target/
 *.settings
 *.prefs
 *.class
+*.iml
 .classpath.rej
 .classpath
 .project
-
+.idea
