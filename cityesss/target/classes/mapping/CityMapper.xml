@@ -1,0 +1,16 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dao.CitiesMapper">
+    <select id="getCityById" parameterType="java.lang.Integer"  resultType="city">
+        select cities_id, Name, countries_idcountries, Description from cities where cities_id = #{idCities}  
+    </select>
+    
+    <select id="getCitiesByCountryId" parameterType="java.lang.Integer" resultType="city">
+        select * from  cities where countries_idcountries = #{Countryid} 
+    </select>
+        
+    <insert id="AddCity">
+        insert into cities (Name, countries_idcountries, Description)
+        values (#{Name}, #{CountryId}, #{Description})
+    </insert>
+    
+    </mapper>
