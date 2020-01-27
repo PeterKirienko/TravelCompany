@@ -1,14 +1,14 @@
 package DBNEW.DBNEW;
-	import org.apache.ibatis.io.Resources;
-	import org.apache.ibatis.session.SqlSessionFactory;
-	import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import Dao.CitiesMapper;
 import cities.Cities;
 
 import java.io.IOException;
-	import java.io.Reader;
-	import java.util.List;
+import java.io.Reader;
+import java.util.List;
 
 public class App {
 	    public static void main(String[] args) {
