@@ -1,11 +1,11 @@
 package Dao;
-import tours.DivingTour;
 
-public interface FamilyTourMapper {
+public interface FamilyTourMapper <IdFamilyTour, Name, Price> {
 
-		idFamilyTour getIdFamilyTour(Integer idFamilyTour);
+		IdFamilyTour getIdFamilyTour(Integer idFamilyTour);
 		Name getName(String name);
 		Price getPrice(Integer price);
 		
 	}
+
 

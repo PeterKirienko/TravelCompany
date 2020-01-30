@@ -13,6 +13,9 @@
 
 <typeAliases>
     <typeAlias alias="city" type="cities.Cities"/>
+    <typeAlias alias="countries" type="countries.Countries"/>
+    <typeAlias alias="person" type="person.Person"/>
+    <typeAlias alias="tour" type="tours.Tours"/>
 </typeAliases>
 
 <environments default="demo">
@@ -29,15 +32,9 @@
 
 <mappers>
     <mapper resource="mapping/CityMapper.xml"/>
-    <!--<mapper class="DBNEW.mappers.CitiesMapper.java"/>
-    <mapper class="DBNEW.mappers.CountriesMapper.java"/>
-    <mapper class="DBNEW.mappers.DivingTourMapper.java"/>
-    <mapper class="DBNEW.mappers.LuxTourMapper.java"/>
-    <mapper class="DBNEW.mappers.FamilyTourMapper.java"/>
-    <mapper class="DBNEW.mappers.PaymentMapper.java"/>
-    <mapper class="DBNEW.mappers.PersonMapper.java"/>
-    <mapper class="DBNEW.mappers.ToursMapper.java"/>
-    <mapper class="DBNEW.mappers.TransportMapper.java"/> -->
+    <mapper resource="mapping/CountriesMapper.xml"/>
+    <mapper resource="mapping/PersonMapper.xml"/>
+    <mapper resource="mapping/ToursMapper.xml"/>
 </mappers>
 
 </configuration>

@@ -1,14 +1,14 @@
 package tours;
 
 public class FamilyTour {
-	private int idFamilyTour;
+	private Integer idFamilyTour;
 	private String name;
-	private int price;
+	private Integer price;
 	
-	public int  getIdFamilyTour() {
+	public Integer  getIdFamilyTour() {
         return idFamilyTour;
     }
-    public void setIdFamilyTour(int idFamilyTour) {
+    public void setIdFamilyTour(Integer idFamilyTour) {
         this.idFamilyTour = idFamilyTour;  
     }
     public String  getName() {
@@ -17,10 +17,10 @@ public class FamilyTour {
     public void setName(String name) {
         this.name = name;
     }
-    public int  getPrice() {
+    public Integer getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
     }

@@ -1,17 +1,17 @@
 package cities;
 
 public class Cities {
-    private int cities_id;
+    private Integer cities_id;
     private String Name;
-    private int countries_idcountries;
+    private Integer countries_idcountries;
     
     private String Description;
 
-    public int getCities_id() {
+    public Integer getCities_id() {
         return cities_id;
     }
 
-    public void setCities_id(int cities_id) {
+    public void setCities_id(Integer cities_id) {
         this.cities_id = cities_id;
     }
 
@@ -23,11 +23,11 @@ public class Cities {
         Name = name;
     }
 
-    public int getCountries_idcountries() {
+    public Integer getCountries_idcountries() {
         return countries_idcountries;
     }
 
-    public void setCountries_idcountries(int countries_idcountries) {
+    public void setCountries_idcountries(Integer countries_idcountries) {
         this.countries_idcountries = countries_idcountries;
     }
 

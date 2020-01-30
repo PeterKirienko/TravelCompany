@@ -1,16 +1,16 @@
 package tours;
 
 public class LuxTour {
-	private int idLuxTour;
+	private Integer idLuxTour;
 	private String name;
-	private int insurance;
-	private int feeding;
-	private int  guidedTour;
+	private Integer insurance;
+	private Integer feeding;
+	private Integer guidedTour;
 	
-	public int  getIdLuxTour() {
+	public Integer  getIdLuxTour() {
         return idLuxTour;
     }
-    public void setIdLuxTour(int idLuxTour) {
+    public void setIdLuxTour(Integer idLuxTour) {
         this.idLuxTour = idLuxTour;  
     }
     public String  getName() {
@@ -19,22 +19,22 @@ public class LuxTour {
     public void setName(String name) {
         this.name = name;
     }
-    public int  getInsurance() {
+    public Integer  getInsurance() {
         return insurance;
     }
-    public void setInsurance(int insurance) {
+    public void setInsurance(Integer insurance) {
         this.insurance = insurance;
     }
-    public int  getFeeding() {
+    public Integer  getFeeding() {
         return feeding;
     }
     public void setFeeding(int feeding) {
         this.feeding = feeding;
     }
-    public int  getGuidedTour() {
+    public Integer  getGuidedTour() {
         return guidedTour;
     }
-    public void setGuidedTour(int guidedTour) {
+    public void setGuidedTour(Integer guidedTour) {
         this.guidedTour = guidedTour;
     }
     }

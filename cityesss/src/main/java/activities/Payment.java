@@ -1,35 +1,35 @@
 package activities;
 
 public class Payment {
-	private int idLuxTour;
-	private int insurance;
-	private int feeding;
-	private int guidedtour;
+	private Integer idLuxTour;
+	private Integer insurance;
+	private Integer feeding;
+	private Integer guidedtour;
 	
-	public int  getIdLuxTour() {
+	public Integer getIdLuxTour() {
         return idLuxTour;
     }
-    public void setIdLuxTour(int idLuxTour) {
+    public void setIdLuxTour(Integer idLuxTour) {
         this.idLuxTour = idLuxTour;
     }
 
-    public int getInsurance() {
+    public Integer getInsurance() {
     return insurance;
     }
-    public void setInsurance(int insurance) {
+    public void setInsurance(Integer insurance) {
     this.insurance = insurance;
     }
 
-    public int  getFeeding() {
+    public Integer  getFeeding() {
     return feeding;
     }
-    public void setFeeding(int feeding) {
+    public void setFeeding(Integer feeding) {
     this.feeding = feeding;
     }
-    public int  getGuidedtour() {
+    public Integer  getGuidedtour() {
     return guidedtour;
     }
-    public void setGuidedtour(int guidedtour) {
+    public void setGuidedtour(Integer guidedtour) {
     this.guidedtour = guidedtour;
 }
 }

@@ -1,0 +1,25 @@
+{ 
+   "countries":[ 
+	 { 
+         "id":1,
+         "name":"Russia",
+         "location":"Europe",
+         "language":"Russia",
+         "hymn":"hymn"
+      },
+      { 
+         "id":2,
+         "name":"Belarus",
+         "location":"Europe",
+         "language":"Belorussian",
+         "hymn":"Belorussian"
+      },
+      { 
+         "id":3,
+         "name":"Germany",
+         "location":"Europe",
+         "language":"German",
+         "hymn":"Deutschlandlied"
+      }
+   ]
+}
