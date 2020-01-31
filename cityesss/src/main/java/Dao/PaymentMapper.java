@@ -1,10 +1,11 @@
 package Dao;
-import activities.Payment;
-public interface PaymentMapper {
+
+public interface PaymentMapper<IdLuxTour, Insurance, Feeding, Guidedtour> {
 
 	IdLuxTour getIdLuxTour(Integer idLuxTour);
-	IdPayment getIdPayment(Integer idPayment);
-	
+	Insurance getInsurance(Integer insurance);
+	Feeding getFeeding(Integer feeding);
+	Guidedtour getGuidedtour(Integer guidedtour);
 }
 
 

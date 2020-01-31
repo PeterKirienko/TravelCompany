@@ -1,6 +1,6 @@
 package Dao;
-import transporttype.Transport;
-public interface TransportMapper  {
+
+public interface TransportMapper  <IdTransportType, TransportTypeName > {
 	IdTransportType getIdTransportType(Integer idTransportType);
 	TransportTypeName getTransportTypeName(String transportTypeName);
 }

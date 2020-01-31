@@ -1,13 +1,13 @@
 package transporttype;
 
 public class Transport {
-	private int idTransportType;
+	private Integer idTransportType;
 	private String transportTypeName;
 	
-	public int  getIdTransportType() {
+	public Integer getIdTransportType() {
         return idTransportType;
     }
-    public void setIdTransportType(int idTransportType) {
+    public void setIdTransportType(Integer idTransportType) {
         this.idTransportType = idTransportType;  
     }
     public String  getTransportTypeName() {

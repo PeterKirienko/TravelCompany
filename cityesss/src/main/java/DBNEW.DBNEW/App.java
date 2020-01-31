@@ -1,40 +1,55 @@
 package DBNEW.DBNEW;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-
-import Dao.CitiesMapper;
+import Dao.CitiesDAO;
+import Dao.CountriesDAO;
+import Dao.PersonDAO;
+import Dao.ToursDAO;
+import countries.Countries;
+import json.JacksonJsonToPojo;
+import json.JacksonPojoToJson;
 import cities.Cities;
-
+import person.Person;
+import tours.Tours;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.List;
 
 public class App {
-	    public static void main(String[] args) {
-	        SqlSessionFactory sqlSessionFactory;
-	        CitiesMapper citiesMapper;
-	        Reader reader = null;
-	        try {
-	            reader = Resources
-	                    .getResourceAsReader("mybatis.config.xml");
-	            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-	            citiesMapper = sqlSessionFactory.openSession().getMapper(CitiesMapper.class);
-	            Cities city = citiesMapper.getCityById(1);
-	            System.out.println(city.getName());
+	public static void main(String[] args) throws IOException {
 
-				List<Cities> cities = citiesMapper.getCitiesByCountryId(2);
-				for (Cities c : cities)
-				{
-					System.out.println(c.getCities_id() + " " + c.getName());
-				}
-	        }
-			catch (IOException e) {
-				e.printStackTrace();
-			}
-			catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	    }
+		JacksonPojoToJson jacksonPojoToJson = new JacksonPojoToJson();
+		JacksonJsonToPojo jacksonJsonToPojo = new JacksonJsonToPojo();
+		CitiesDAO citiesDAO = new CitiesDAO();
+		CountriesDAO countriesDAO = new CountriesDAO();
+		PersonDAO personDao = new PersonDAO();
+		ToursDAO toursDAO = new ToursDAO();
+
+		// Countries
+		Cities city = citiesDAO.getCityById(1);
+		jacksonPojoToJson.saveObjectToJsonFile(city, "city2");
+
+		List<Cities> cities = citiesDAO.getCitiesByCountryId(2);
+		jacksonPojoToJson.saveObjectToJsonFile(cities, "cities");
+		for (Cities town : cities)
+		{
+			System.out.println(town.getCities_id() + " " + town.getName());
+		}
+
+		Cities City = jacksonJsonToPojo.ReadCityFromJson("LondonCity.json");
+		citiesDAO.saveCity(City);
+
+		// Countries
+		Countries countries = countriesDAO.getCountryById(2);
+		jacksonPojoToJson.saveObjectToJsonFile(countries, "countries");
+
+		// Person
+		Person person = personDao.getPersonById(4);
+		jacksonPojoToJson.saveObjectToJsonFile(person, "person");
+
+		// Tours
+		Tours tour = toursDAO.getTourById(6);
+		jacksonPojoToJson.saveObjectToJsonFile(tour, "tour");
+		List<Tours> allTours = toursDAO.getAllTours();
+		jacksonPojoToJson.saveObjectToJsonFile(allTours, "allTours");
+
+		Tours tourFromJson = jacksonJsonToPojo.ReadTourFromJson("LondonTour.json");
 	}
-
+}

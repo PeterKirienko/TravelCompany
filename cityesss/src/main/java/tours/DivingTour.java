@@ -1,33 +1,33 @@
 package tours;
 
 public class DivingTour {
-	private int idDivingTour;
-	private int sea;
-	private int equipment;
-	private int preparation;
+	private Integer idDivingTour;
+	private Integer sea;
+	private Integer equipment;
+	private Integer preparation;
 	
-	public int  getIdDivingTour() {
+	public Integer  getIdDivingTour() {
         return idDivingTour;
     }
     public void setIdDivingTour(int idDivingTour) {
         this.idDivingTour = idDivingTour;  
     }
-    public int  getSea() {
+    public Integer getSea() {
         return sea;
     }
-    public void setSea(int sea) {
+    public void setSea(Integer sea) {
         this.sea = sea;
     }
-    public int  getEquipment() {
+    public Integer  getEquipment() {
         return equipment;
     }
-    public void setEquipment(int equipment) {
+    public void setEquipment(Integer equipment) {
         this.equipment = equipment;
     }
-    public int  getPreparation() {
+    public Integer  getPreparation() {
         return preparation;
     }
-    public void setPreparation(int preparation) {
+    public void setPreparation(Integer preparation) {
         this.preparation = preparation;
     }
     }

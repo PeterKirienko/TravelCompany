@@ -1,16 +1,16 @@
 package tours;
 
 public class Tours {
-	    private int id;
+	    private Integer id;
 	    private String location;
-	    private int price;
-	    private int tripsCount;
-	    private int orderOfDiving;
-	    private int insurance;
-	    private int personId;
-	    private int transportTypeId;
+	    private Integer price;
+	    private Integer tripsCount;
+	    private Integer orderOfDiving;
+	    private Integer insurance;
+	    private Integer personId;
+	    private Integer transportTypeId;
 		
-		public int  getId() {
+		public Integer  getId() {
 	        return id;
 	    }
 	    public void setId(int id) {
@@ -22,40 +22,40 @@ public class Tours {
 	    public void setLocation(String location) {
 	        this.location = location;
 	    }
-	    public int  getInsurance() {
+	    public Integer  getInsurance() {
 	        return insurance;
 	    }
-	    public void setInsurance(int insurance) {
+	    public void setInsurance(Integer insurance) {
 	        this.insurance = insurance;
 	    }
-	    public int  getPrice() {
+	    public Integer  getPrice() {
 	        return price;
 	    }
-	    public void setPrice(int price) {
+	    public void setPrice(Integer price) {
 	        this.price = price;
 	    }
-	    public int  getTripsCount() {
+	    public Integer  getTripsCount() {
 	        return tripsCount;
 	    }
-	    public void setTripsCount(int tripsCount) {
+	    public void setTripsCount(Integer tripsCount) {
 	        this.tripsCount = tripsCount;
 	    }
-	    public int  getOrderOfDiving() {
+	    public Integer  getOrderOfDiving() {
 	        return orderOfDiving;
 	    }
 	    public void setOrderOfDiving(int orderOfDiving) {
 	        this.orderOfDiving = orderOfDiving;
 	    }
-	    public int  getPersonId() {
+	    public Integer getPersonId() {
 	        return personId;
 	    }
-	    public void setPersonId(int personId) {
+	    public void setPersonId(Integer personId) {
 	        this.personId = personId;
 	    }
-	    public int  getTransportTypeId() {
+	    public Integer  getTransportTypeId() {
 	        return transportTypeId;
 	    }
-	    public void setTransportTypeId(int transportTypeId) {
+	    public void setTransportTypeId(Integer transportTypeId) {
 	        this.transportTypeId = transportTypeId;
 }
 }

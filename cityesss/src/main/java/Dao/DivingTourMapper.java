@@ -1,9 +1,12 @@
 package Dao;
-import tours.DivingTour;
-public interface DivingTourMapper {
 
-		DivingTour getIdDivingTour(Integer idDivingTour);
+public interface DivingTourMapper <IdDivingTour, Sea, Equipment, Preparation> {
+
+		IdDivingTour getIdDivingTour(Integer idDivingTour);
+		Sea getSea(Integer sea);
 		Equipment getEquipment(String equipment);
+		Preparation getPreparation (Integer parentId);
+		
 	}
 
 
