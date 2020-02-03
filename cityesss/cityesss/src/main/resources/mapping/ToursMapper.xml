@@ -1,0 +1,11 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dao.ToursMapper">
+    <select id="getTourById" parameterType="java.lang.Integer"  resultType="tour">
+        SELECT * FROM tours
+        where id = #{tourId}
+    </select>
+
+    <select id="getAllTours" resultType="tour">
+        SELECT * FROM tours
+    </select>
+</mapper>

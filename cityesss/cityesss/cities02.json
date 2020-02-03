@@ -1,0 +1,16 @@
+[ {
+  "cities_id" : 1,
+  "countries_idcountries" : 2,
+  "name" : "Minsk",
+  "description" : null
+}, {
+  "cities_id" : 2,
+  "countries_idcountries" : 2,
+  "name" : "Grodno",
+  "description" : null
+}, {
+  "cities_id" : 3,
+  "countries_idcountries" : 2,
+  "name" : "Lida",
+  "description" : "Has beer factory"
+} ]
