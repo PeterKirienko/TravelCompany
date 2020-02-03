@@ -1,0 +1,10 @@
+{
+  "id" : 6,
+  "location" : "Morocco",
+  "price" : 1700,
+  "tripsCount" : 1,
+  "orderOfDiving" : 1,
+  "insurance" : 0,
+  "personId" : 1,
+  "transportTypeId" : 1
+}

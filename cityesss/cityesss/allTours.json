@@ -1,0 +1,28 @@
+[ {
+  "id" : 4,
+  "location" : "Spain",
+  "price" : 1200,
+  "tripsCount" : 1,
+  "orderOfDiving" : 1,
+  "insurance" : 1,
+  "personId" : 1,
+  "transportTypeId" : 1
+}, {
+  "id" : 5,
+  "location" : "Italy",
+  "price" : 1300,
+  "tripsCount" : 2,
+  "orderOfDiving" : 0,
+  "insurance" : 1,
+  "personId" : 3,
+  "transportTypeId" : 2
+}, {
+  "id" : 6,
+  "location" : "Morocco",
+  "price" : 1700,
+  "tripsCount" : 1,
+  "orderOfDiving" : 1,
+  "insurance" : 0,
+  "personId" : 1,
+  "transportTypeId" : 1
+} ]
