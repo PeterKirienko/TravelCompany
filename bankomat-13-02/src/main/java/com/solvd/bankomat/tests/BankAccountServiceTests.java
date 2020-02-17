@@ -73,11 +73,4 @@ public class BankAccountServiceTests {
         convertedAmount = bankAccountService.convertAmount(bankAccountInBYN, transactionInUSD);
         Assert.assertEquals(convertedAmount, transactionInUSD.getAmount().multiply(testRateSell));
     }
-
-    //convertAmount
-    //getBankPurchaseRateByCurrency
-    //getBankPurchaseRateByCurrency
-    //getBankSaleRateByCurrency
-    //verifySecurityInfo
-
-}
+    }
