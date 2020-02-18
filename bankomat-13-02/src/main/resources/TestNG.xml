@@ -5,13 +5,13 @@
 
    <test name = "BankAccountServiceTests">
       <classes>
-         <class name = "BankAccountServiceImpl" />
+         <class name = "com.solvd.bankomat.tests.BankAccountServiceImpl" />
       </classes>
    </test>
   
    <test name = "SessionFactoryTests">
       <classes>
-         <class name = "BankAccountServiceImpl" />
+         <class name = "com.solvd.bankomat.tests.BankAccountServiceImpl" />
       </classes>
    </test>
   
